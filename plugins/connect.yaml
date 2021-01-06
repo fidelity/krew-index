@@ -1,0 +1,84 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: connect
+spec:
+  version: v0.4.0
+  homepage: https://github.com/fidelity/kconnect
+  shortDescription: "Discover and access clusters"
+  description: |
+    kconnect is a tool that can be used to discover and securely access Kubernetes
+    clusters across multiple operating environments.
+    Based on the authentication mechanism chosen the CLI will discover Kubernetes
+    clusters you are allowed to access in a target hosting environment (i.e. EKS, AKS, Rancher)
+    and generate a kubeconfig for a chosen cluster.
+    Features:
+    - Authenticate using SAML or Azure Active Directory
+    - Discover EKS, AKS & Rancher clusters
+    - Generate a kubeconfig for a cluster
+    - Query history of connected servers
+    - Regenerate the kubeconfig from your history by using an id or an alias
+    - Import defaults values for your company
+  caveats: |
+    This plugin currently only supports EKS, AKS and Rancher
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/fidelity/kconnect/releases/download/0.4.0/kconnect_linux_amd64.tar.gz
+    sha256: b85402fa8c74bd04356ec87673c332f17a3d3355314a858ae00d9f3967e418fc
+    files:
+    - from: "kconnect"
+      to: "kubectl-connect"
+    - from: "LICENSE"
+      to: "."
+    bin: kubectl-connect
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm
+    uri: https://github.com/fidelity/kconnect/releases/download/0.4.0/kconnect_linux_arm.tar.gz
+    sha256: 9f82627a8d129f23aa9d4bdd992d965e90c171388782897f42eb90383fe19d2b
+    files:
+    - from: "kconnect"
+      to: "kubectl-connect"
+    - from: "LICENSE"
+      to: "."
+    bin: kubectl-connect
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://github.com/fidelity/kconnect/releases/download/0.4.0/kconnect_linux_arm64.tar.gz
+    sha256: b942e7c5636883baf3a1ae2bf78aded9ec2f3dc0d263caef3404d28162adcaf0
+    files:
+    - from: "kconnect"
+      to: "kubectl-connect"
+    - from: "LICENSE"
+      to: "."
+    bin: kubectl-connect
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/fidelity/kconnect/releases/download/0.4.0/kconnect_macos_amd64.tar.gz
+    sha256: 273e1ef68122ed63a2b52231ecfc0140375cec4ad21227bea9489c833a80e1db
+    files:
+    - from: "kconnect"
+      to: "kubectl-connect"
+    - from: "LICENSE"
+      to: "."
+    bin: kubectl-connect
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/fidelity/kconnect/releases/download/0.4.0/kconnect_windows_amd64.zip
+    sha256: 9bed7d564e0aaf5b1611160bb052d4e8b5a72ab2df23cf8cd16f2112abec2794
+    files:
+    - from: "kconnect.exe"
+      to: "kubectl-connect.exe"
+    - from: "LICENSE"
+      to: "."
+    bin: kubectl-connect.exe
