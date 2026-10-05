@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: connect
 spec:
-  version: v0.5.25
+  version: v0.5.26
   homepage: https://github.com/fidelity/kconnect
   shortDescription: "Discover and access clusters"
   description: |
@@ -26,8 +26,8 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
-    uri: https://github.com/fidelity/kconnect/releases/download/0.5.25/kconnect_linux_amd64.tar.gz
-    sha256: a0eeada051f95321b3d3503fbde39dc57a987447ec8ae31cee4ff19aba4e230f
+    uri: https://github.com/fidelity/kconnect/releases/download/0.5.26/kconnect_linux_amd64.tar.gz
+    sha256: 7ac322cd5a5af04e2d72c0e81742757c5d1ef8de36526f8a11ae5f03792da46c
     files:
     - from: "kconnect"
       to: "kubectl-connect"
@@ -38,8 +38,8 @@ spec:
       matchLabels:
         os: linux
         arch: arm64
-    uri: https://github.com/fidelity/kconnect/releases/download/0.5.25/kconnect_linux_arm64.tar.gz
-    sha256: 01d723064a75a5ad784af15e25bed1444668a59e0b0e4bd95f5c9b8b2e650f83
+    uri: https://github.com/fidelity/kconnect/releases/download/0.5.26/kconnect_linux_arm64.tar.gz
+    sha256: 48c549ce20f93a219746e81f06a95767f43bb72e0c82458f038b7cceef249a81
     files:
     - from: "kconnect"
       to: "kubectl-connect"
@@ -50,8 +50,8 @@ spec:
       matchLabels:
         os: darwin
         arch: amd64
-    uri: https://github.com/fidelity/kconnect/releases/download/0.5.25/kconnect_macos_amd64.tar.gz
-    sha256: d0a32244ed44571afb1251c363d28ad116d027dceca54cb271952d1c8fae56fb
+    uri: https://github.com/fidelity/kconnect/releases/download/0.5.26/kconnect_macos_amd64.tar.gz
+    sha256: fb1b0fe629c7f8b9027d6ed38991e32cf2278a6b2aef6a53ef9967a163a6e174
     files:
     - from: "kconnect"
       to: "kubectl-connect"
@@ -62,8 +62,8 @@ spec:
       matchLabels:
         os: darwin
         arch: arm64
-    uri: https://github.com/fidelity/kconnect/releases/download/0.5.25/kconnect_macos_arm64.tar.gz
-    sha256: e083e59a283a97c81a22a06614a51a01390b75c5af6c5febe5f4b6c96c9761c1
+    uri: https://github.com/fidelity/kconnect/releases/download/0.5.26/kconnect_macos_arm64.tar.gz
+    sha256: 6114acc919080d7e70f70e0a1d1a818dad170f823c6e6ad35c1ca589acba1f9e
     files:
     - from: "kconnect"
       to: "kubectl-connect"
@@ -74,8 +74,8 @@ spec:
       matchLabels:
         os: windows
         arch: amd64
-    uri: https://github.com/fidelity/kconnect/releases/download/0.5.25/kconnect_windows_amd64.zip
-    sha256: a136d2db1be1066bcf7110d53b9df28bbc348e36a58507628d718bf862ec3ced
+    uri: https://github.com/fidelity/kconnect/releases/download/0.5.26/kconnect_windows_amd64.zip
+    sha256: 959667e7a2ddb42fb49ccd51dc96d952677522fbec9409574aeadb8c350b5833
     files:
     - from: "kconnect.exe"
       to: "kubectl-connect.exe"
