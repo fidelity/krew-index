@@ -4,39 +4,39 @@ kind: Plugin
 metadata:
   name: connect
 spec:
-  version: v0.5.28-rc.1
+  version: v0.5.28
   platforms:
     - bin: kconnect.exe
-      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28-rc.1/kconnect_windows_amd64.zip
-      sha256: a5c562c99b0a5cb8cea8ccfbf7d77540b96453e7f84f347a22b653e4ad8ca8a1
+      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28/kconnect_windows_amd64.zip
+      sha256: 7d4796667a45f12cf4bd0e7b582b83cde053d259e3e58b37dd101453488b084e
       selector:
         matchLabels:
           os: windows
           arch: amd64
     - bin: kconnect
-      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28-rc.1/kconnect_macos_arm64.tar.gz
-      sha256: e62a24fb084615bb72e99ec6e9b4f775a75d1889e2e5c199b520209a99a089e7
+      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28/kconnect_macos_arm64.tar.gz
+      sha256: 2ea597526f44b4de054d804df61a67e302a2df087632be35ef9ceba62451629f
       selector:
         matchLabels:
           os: darwin
           arch: arm64
     - bin: kconnect
-      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28-rc.1/kconnect_macos_amd64.tar.gz
-      sha256: 00e7c853241692365d5270ee6974ace615bc0a6eea49d10ad9a6ae431387418d
+      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28/kconnect_macos_amd64.tar.gz
+      sha256: e3eff40db5743b66fa5bb06ef22516b2e4e012e7a761dc4d0979410c94c98da0
       selector:
         matchLabels:
           os: darwin
           arch: amd64
     - bin: kconnect
-      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28-rc.1/kconnect_linux_arm64.tar.gz
-      sha256: b2c711890f850e6165fa1776c796c95a01f46c7f8422f2bb74736bec18127cc3
+      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28/kconnect_linux_arm64.tar.gz
+      sha256: db1992cd0a54e3b55a8a2d1b18d9372a46200f8027caa1e6eee53d715f990012
       selector:
         matchLabels:
           os: linux
           arch: arm64
     - bin: kconnect
-      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28-rc.1/kconnect_linux_amd64.tar.gz
-      sha256: ff0ce78f54d677f4038524d4d3ff34ba1ad50f2cbb62ddbc03b1ad04ee8bec8b
+      uri: https://github.com/fidelity/kconnect/releases/download/0.5.28/kconnect_linux_amd64.tar.gz
+      sha256: 83198b635ded4c428d27164cc7c5d72dde46a1199e3bb8c5ba00e589fb128cbb
       selector:
         matchLabels:
           os: linux
